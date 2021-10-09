@@ -1,17 +1,27 @@
 package com.geekym.notedown.Activity;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 
 import android.os.Bundle;
 import android.text.format.DateFormat;
+import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.geekym.notedown.Model.Notes;
 import com.geekym.notedown.R;
 import com.geekym.notedown.ViewModel.NotesViewModel;
 import com.geekym.notedown.databinding.ActivityUpdateNoteBinding;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
+
+import org.w3c.dom.Text;
 
 import java.util.Date;
 
@@ -134,5 +144,41 @@ public class UpdateNote extends AppCompatActivity {
         Toast.makeText(this, "Notes Updated Successfully", Toast.LENGTH_SHORT).show();
 
         finish();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.delete_menu,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        if (item.getItemId() == R.id.delete)
+        {
+            BottomSheetDialog sheetDialog = new BottomSheetDialog(UpdateNote.this);
+
+            View view = LayoutInflater.from(UpdateNote.this).inflate(R.layout.delete_bottom_popup,(LinearLayout) findViewById(R.id.bottom_popup));
+            sheetDialog.setContentView(view);
+
+            TextView yes,no;
+
+            yes = view.findViewById(R.id.delete_yes);
+            no = view.findViewById(R.id.delete_no);
+
+            yes.setOnClickListener(v -> {
+
+                notesViewModel.deleteNote(uid);
+                finish();
+            });
+
+            no.setOnClickListener(v -> {
+                sheetDialog.dismiss();
+            });
+
+            sheetDialog.show();
+        }
+        return true;
     }
 }
