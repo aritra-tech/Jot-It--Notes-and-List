@@ -18,14 +18,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginEnd="16dp"
-            android:hint="Title.."
-            android:textColor="@color/black"
-            android:background="@drawable/text_bg"
-            android:padding="16dp"
+            android:layout_marginLeft="16dp"
             android:layout_marginTop="25dp"
-            android:layout_marginLeft="16dp"/>
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/text_bg"
+            android:hint="Title.."
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:textColorHint="#252121" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -82,20 +83,22 @@
 
 
         </LinearLayout>
+
         <EditText
             android:id="@+id/notesData"
             android:layout_width="match_parent"
             android:layout_height="400dp"
             android:layout_marginStart="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginEnd="16dp"
-            android:hint="Notes"
-            android:textColor="@color/black"
-            android:background="@drawable/text_bg"
-            android:padding="16dp"
-            android:gravity="start"
+            android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
-            android:layout_marginLeft="16dp"/>
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/text_bg"
+            android:gravity="start"
+            android:hint="Notes"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:textColorHint="#252020" />
 
     </LinearLayout>
 

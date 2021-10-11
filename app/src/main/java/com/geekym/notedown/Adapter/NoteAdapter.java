@@ -14,18 +14,26 @@ import com.geekym.notedown.MainActivity;
 import com.geekym.notedown.Model.Notes;
 import com.geekym.notedown.R;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.notesViewHolder> {
 
     MainActivity mainActivity;
     List<Notes> notes;
+    List<Notes> allNotes;
 
     public NoteAdapter(MainActivity mainActivity, List<Notes> notes) {
         this.mainActivity = mainActivity;
         this.notes = notes;
+        allNotes = new ArrayList<>(notes);
     }
 
+    public void searchNotes(List<Notes> filternote)
+    {
+        this.notes = filternote;
+        notifyDataSetChanged();
+    }
     @Override
     public notesViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         return new notesViewHolder(LayoutInflater.from(mainActivity).inflate(R.layout.items,parent,false));

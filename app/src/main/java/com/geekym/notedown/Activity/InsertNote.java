@@ -4,11 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.format.DateFormat;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.geekym.notedown.MainActivity;
 import com.geekym.notedown.Model.Notes;
 import com.geekym.notedown.R;
 import com.geekym.notedown.ViewModel.NotesViewModel;
@@ -22,6 +26,7 @@ public class InsertNote extends AppCompatActivity {
     String title,notes;
     NotesViewModel notesViewModel;
     String color = "1";
+    ImageView back_btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +34,15 @@ public class InsertNote extends AppCompatActivity {
         binding = ActivityInsertNoteBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        /*back_btn.findViewById(R.id.back_btn);
+
+        back_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(InsertNote.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });*/
 
         notesViewModel = new ViewModelProvider(this).get(NotesViewModel.class);
 

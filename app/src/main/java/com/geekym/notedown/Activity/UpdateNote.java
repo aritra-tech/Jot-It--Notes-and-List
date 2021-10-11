@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.format.DateFormat;
 import android.view.LayoutInflater;
@@ -11,10 +12,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.geekym.notedown.MainActivity;
 import com.geekym.notedown.Model.Notes;
 import com.geekym.notedown.R;
 import com.geekym.notedown.ViewModel.NotesViewModel;
@@ -32,12 +35,23 @@ public class UpdateNote extends AppCompatActivity {
     String utitle,unotes,ucolor;
     NotesViewModel notesViewModel;
     int uid;
+    ImageView back_btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityUpdateNoteBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        /*back_btn.findViewById(R.id.back_btn);
+
+        back_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(UpdateNote.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });*/
 
         uid = getIntent().getIntExtra("id",0);
         utitle = getIntent().getStringExtra("title");

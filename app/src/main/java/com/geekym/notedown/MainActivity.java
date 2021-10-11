@@ -1,18 +1,27 @@
 package com.geekym.notedown;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.SearchView;
 
 import com.geekym.notedown.Activity.InsertNote;
 import com.geekym.notedown.Adapter.NoteAdapter;
+import com.geekym.notedown.Model.Notes;
 import com.geekym.notedown.ViewModel.NotesViewModel;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,10 +30,13 @@ public class MainActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     NoteAdapter adapter;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
 
         newnote = findViewById(R.id.newnote);
