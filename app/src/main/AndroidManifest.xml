@@ -9,16 +9,17 @@
         android:roundIcon="@drawable/appicon"
         android:supportsRtl="true"
         android:theme="@style/Theme.Notedown">
-        <activity android:name=".Activity.UpdateNote"></activity>
-        <activity android:name=".Activity.InsertNote" />
-        <activity android:name=".Activity.SplashScreen" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Activity.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Activity.UpdateNote" />
+        <activity android:name=".Activity.InsertNote" />
+        <activity android:name=".Activity.SplashScreen" />
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
