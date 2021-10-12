@@ -1,6 +1,8 @@
 package com.geekym.notedown.Adapter;
 
 import android.content.Intent;
+import android.os.Handler;
+import android.os.Looper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +18,8 @@ import com.geekym.notedown.R;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.notesViewHolder> {
 
@@ -23,10 +27,12 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.notesViewHolde
     List<Notes> notes;
     List<Notes> allNotes;
 
+
     public NoteAdapter(MainActivity mainActivity, List<Notes> notes) {
         this.mainActivity = mainActivity;
         this.notes = notes;
         allNotes = new ArrayList<>(notes);
+
     }
 
     public void searchNotes(List<Notes> filternote)
@@ -94,4 +100,5 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.notesViewHolde
             notecolor = itemView.findViewById(R.id.noteColor);
         }
     }
+
 }

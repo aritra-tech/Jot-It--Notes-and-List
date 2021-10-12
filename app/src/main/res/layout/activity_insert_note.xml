@@ -26,7 +26,7 @@
             android:hint="Title.."
             android:padding="16dp"
             android:textColor="@color/black"
-            android:textColorHint="#252121" />
+            android:textColorHint="#454343" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -98,7 +98,7 @@
             android:hint="Notes"
             android:padding="16dp"
             android:textColor="@color/black"
-            android:textColorHint="#252020" />
+            android:textColorHint="#454343" />
 
     </LinearLayout>
 
