@@ -63,6 +63,8 @@ public class MainActivity extends AppCompatActivity {
                 filternotes = notes;
             }
         });
+
+
     }
 
     public void setAdapter(List<Notes> notes)
@@ -95,6 +97,7 @@ public class MainActivity extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
+
     private void NotesFilter(String newText) {
 
         ArrayList<Notes> FilterName = new ArrayList<>();
@@ -107,4 +110,5 @@ public class MainActivity extends AppCompatActivity {
         }
         this.adapter.searchNotes(FilterName);
     }
+
 }

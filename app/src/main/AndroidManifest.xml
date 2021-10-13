@@ -18,7 +18,6 @@
         </activity>
         <activity android:name=".Activity.UpdateNote" />
         <activity android:name=".Activity.InsertNote" />
-        <activity android:name=".Activity.SplashScreen" />
         <activity android:name=".MainActivity"></activity>
     </application>
 
