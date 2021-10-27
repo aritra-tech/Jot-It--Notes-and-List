@@ -19,9 +19,8 @@ Jot-It is a basic note taking app that has a text field where you can write note
 - No extra permission required.
 
 ## 👀 Images 
-![jot1](https://user-images.githubusercontent.com/80090908/139117751-0e34520d-4328-405b-908c-8ed![jot3](https://user-images.githubusercontent.com/80090908/139117884-07c1bd3e-29f7-46cc-98bf-058134c51ff7.png)
-6a609a122.png) ![jot_2](https://user-images.githubusercontent.com/80090908/139117780-69cb16f6-963d-4dd8-a700-e05e51df2ce7.png)  ![Uploading jot3.png…]()
-![jot4](https://user-images.githubusercontent.com/80090908/139117915-bcee52a6-9d2a-4d1e-9a37-8bdaf48ff3e9.png)
+
+![jot1](https://user-images.githubusercontent.com/80090908/139118334-211091d5-7482-4cc8-b3d4-24ebd63fc0a3.png)   ![jot_2](https://user-images.githubusercontent.com/80090908/139118352-82155ee3-bd90-4e76-87cb-283f33052e80.png)  ![jot3](https://user-images.githubusercontent.com/80090908/139118423-cbf36371-7638-46d1-8d8c-5637f9e92b48.png)  ![jot4](https://user-images.githubusercontent.com/80090908/139118453-3ddd367b-cb7a-42a6-b0dd-ae4ee1fa2208.png)
 
 
 ## 👨🏽‍💻 Tech Stack
