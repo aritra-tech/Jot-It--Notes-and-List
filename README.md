@@ -1,4 +1,5 @@
-![feature_graphics_jot_it](https://user-images.githubusercontent.com/80090908/139118056-91b57f96-1081-4dec-a44e-0f7b01bb2569.png)
+![feature_graphics_jot_it](https://user-images.githubusercontent.com/80090908/139118210-dd12d488-67de-4f20-a248-2ed27a9d51d5.png)
+
 
 # Jot-It - Notes and Lists
 
