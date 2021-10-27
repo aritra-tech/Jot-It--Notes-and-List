@@ -1,9 +1,11 @@
+![feature_graphics_jot_it](https://user-images.githubusercontent.com/80090908/139118056-91b57f96-1081-4dec-a44e-0f7b01bb2569.png)
 
 # Jot-It - Notes and Lists
 
 Jot-It is a basic note taking app that has a text field where you can write notes of any length, and customizable notes with different colors. Add notes and lists to Jot-It. Color to code notes to quickly organize and get on with your life.
 
 ## ▶️ Download 
+
 [<img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
       alt="Get it on Play Store"
       height="80">](https://play.google.com/store/apps/details?id=com.geekym.notedown)
@@ -16,8 +18,9 @@ Jot-It is a basic note taking app that has a text field where you can write note
 - No extra permission required.
 
 ## 👀 Images 
-![jot1](https://user-images.githubusercontent.com/80090908/139115836-d70279d1-0065-4a73-88ac-94f877c750a4.png)  ![jot_2](https://user-images.githubusercontent.com/80090908/139115866-13588abe-95f6-49ed-8aeb-d01a7b6dbe4a.png)  ![jot3](https://user-images.githubusercontent.com/80090908/139115910-c1159ad4-49d9-4498-86ff-06ca2fa9739e.png)
-![jot4](https://user-images.githubusercontent.com/80090908/139115932-ca9a7b45-2a72-4cef-bc3d-ff9ef87ba319.png)
+![jot1](https://user-images.githubusercontent.com/80090908/139117751-0e34520d-4328-405b-908c-8ed![jot3](https://user-images.githubusercontent.com/80090908/139117884-07c1bd3e-29f7-46cc-98bf-058134c51ff7.png)
+6a609a122.png) ![jot_2](https://user-images.githubusercontent.com/80090908/139117780-69cb16f6-963d-4dd8-a700-e05e51df2ce7.png)  ![Uploading jot3.png…]()
+![jot4](https://user-images.githubusercontent.com/80090908/139117915-bcee52a6-9d2a-4d1e-9a37-8bdaf48ff3e9.png)
 
 
 ## 👨🏽‍💻 Tech Stack
