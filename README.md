@@ -5,11 +5,6 @@
 
 Jot-It is a basic note taking app that has a text field where you can write notes of any length, and customizable notes with different colors. Add notes and lists to Jot-It. Color to code notes to quickly organize and get on with your life.
 
-## ▶️ Download 
-
-[<img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
-      alt="Get it on Play Store"
-      height="80">](https://play.google.com/store/apps/details?id=com.geekym.notedown)
 
 ## 🚀 Features
 
